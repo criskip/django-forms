@@ -26,5 +26,8 @@ urlpatterns = [
     path('', view.index_page, name = 'index'),
     path('', view.edit_page, name = 'edit'),
     path('', view.login_page, name = 'login'),
-    path('', view.signup_page, name = 'signup')
+    path('', view.signup_page, name = 'signup'),
+    path('insert', view.insertData, name = 'insertdata'),
+    path('delete/<id>', view.deleteData, name = 'deleteData'),
+    path('update/<id>', view.updateData, name = 'updateData')
 ]
